@@ -1,2 +1,5 @@
 # dj-niomic
-Course Niomic : Django
+#Course Niomic : Django
+
+1. Membuat Project Pertama Django
+    django-admin startproject mysite 
