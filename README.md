@@ -21,10 +21,10 @@ Course Niomic : Django
         - masuk ke direktori **mysite**.\
             command : `python manage.py migrate` 
         - membuat SuperUser
-            command : `python manage.py createsuperuser`
-                Username = niomic
-                Email address = niomic@django.com
-                password = niomic
+            command : `python manage.py createsuperuser`\
+                Username = niomic\
+                Email address = niomic@django.com\
+                password = niomic\
     - lalu jalankan server lokal dari Django. \
         ` python manage.py runserver `
 
