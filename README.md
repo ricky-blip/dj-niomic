@@ -28,3 +28,13 @@ Course Niomic : Django
     - lalu jalankan server lokal dari Django\
         ` python manage.py runserver `
 
+5. Membuat View pada Django
+   - pada direktori aplikasi **niomic**
+        - masuk ke **views.py** 
+        - import httpResponse `from django.shortcuts import HttpResponse`
+        - buat method dengan nama **index** dengan parameter **request** lalu return **HttpResponse** nya
+            ```
+                def index(index):
+                    return HttpResponse("Hello World")
+            ```
+
