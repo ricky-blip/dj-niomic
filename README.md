@@ -2,15 +2,14 @@
 Course Niomic : Django
 
 1. Membuat Project Pertama Django\
-    `django-admin startproject mysite` > **mysite** adalah nama dari project.
-    
+    `django-admin startproject mysite` > **mysite** adalah nama dari project.    
 
     - masuk ke direktori **mysite**.
     - jalankan server lokal dari Django\
         ` python manage.py runserver `
 
 2. Membuat Aplikasi Django\
-    `python manage.py startproject niomic` > **niomic** adalah nama dari aplikasi.
+    `python manage.py startapp niomic` > **niomic** adalah nama dari aplikasi.
 
 3. Mendaftarkan Aplikasi **niomic** ke Django
     - Pada direktori project **mysite** terdapat file **setting.py**
@@ -31,10 +30,10 @@ Course Niomic : Django
 5. Membuat View pada Django
    - pada direktori aplikasi **niomic**
         - masuk ke **views.py** 
-        - import httpResponse `from django.shortcuts import HttpResponse`
+        - import httpResponse `from django.http import HttpResponse`
         - buat method dengan nama **index** dengan parameter **request** lalu return **HttpResponse** nya
             ```
-                def index(index):
+                def index(request):
                     return HttpResponse("Hello World")
             ```
 
@@ -47,7 +46,7 @@ Course Niomic : Django
        - buat url pattern
             ```
                 urlpatterns = [
-                    path('', views.index, name='index')
+                    path('', views.index)
                 ]
             ```
     - Merujuk akar dari url django
@@ -65,6 +64,6 @@ Course Niomic : Django
                     path('admin/', admin.site.urls),
                 ]
             ```
-
+            
 7. 
 
